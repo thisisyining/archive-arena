@@ -1,30 +1,60 @@
-/* These styles are just to make it easier to see the blocks, initially. */
-
 body {
-	font-family: monospace;
-	padding: 40px;
+	padding: 10px;
+	font-family: sans-serif;
 }
+
+
+header {
+background-color: TOMATO;
+position: fixed;
+width: 100%;
+top: 0;
+left: 0;
+padding: 20px;
+}
+
+
+h1 {
+	font-size: 200%
+}
+
+section {
+	width: 60%;
+	margin-top: 100px;
+	background-color: darkgrey;
+	padding: 0px;
+	display: flex;
+	/* how to make it flex wrap? */
+	/* how to add padding between blocks? */
+}
+
+
+
+
 
 a {
-	color: royalblue;
+	color: red;
 }
 
-h1, h2, h3 {
-	font-size: 200%;
+h1 {
+	font-size: 48px;
+	color: yellow;
 }
 
-section,
-figure {
-	margin-top: 80px;
-	max-width: 600px;
+h2 {
+	font-size: 16px;
+	color: blue;
 }
 
-#channel-description > *,
-figure > *:not(:first-child),
-.description > *:not(:first-child),
-.content > *:not(:first-child) {
-	display: block;
-	margin-top: 1em;
+h3 {
+	color: green;
+	font-size: 24px;
+	font-weight: bold;
 }
 
-/* Clear them out once you’ve got your channel plugged in! */
+
+p{
+	font-size: 8px;
+	color: black;
+	opacity: 20%;
+}
