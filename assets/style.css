@@ -47,9 +47,7 @@ h2 {
 }
 
 h3 {
-	color: green;
-	font-size: 24px;
-	font-weight: bold;
+
 }
 
 
@@ -57,4 +55,17 @@ p{
 	font-size: 8px;
 	color: black;
 	opacity: 20%;
+}
+
+figure {
+	padding: 20px;
+}
+
+
+
+.title {
+	margin-bottom: 10px;
+	color: green;
+	font-size: 24px;
+	font-weight: bold;
 }
