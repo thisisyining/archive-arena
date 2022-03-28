@@ -1,34 +1,83 @@
+
+
+
+/* This is an attribute selector for when it is “open”. */
+details[open] {
+	/* background-color: white; */
+}
+
+summary {
+	cursor: pointer; /* Gives it the link cursor, which it doesn’t have by default. */
+	font-weight: bold;
+	list-style: none; /* Hides the default dot in Chrome. */
+}
+
+/* Hide the default little arrow in Safari. */
+summary::-webkit-details-marker { display: none; }
+
+/* Any element right after the summary. */
+summary + * {
+	margin-top: 10px;
+}
+
+/* A custom indicator. */
+details summary:before {
+	/* content:"+"; */
+	font-size: 1.2em;
+	margin-right: 1em;
+}
+
+details[open] summary:before {
+	/* content:"–"; /* Change when it’s open. */ */
+}
+
+
+
+
+
+hr.solid {
+  border-top: 1.5px solid #ffffff;
+}
+
+
+
+
+
+
 body {
 	padding: 10px;
 	font-family: sans-serif;
+	background-color: black;
 }
 
 
 header {
-background-color: TOMATO;
-position: fixed;
+background-color:black;
+/* position: fixed; */
+height: 100px;
 width: 100%;
 top: 0;
 left: 0;
-padding: 20px;
+padding: 0px;
+}
+
+
+headerfont {
+	margin-top: 0px;
 }
 
 
 h1 {
+	margin-top: 200px
 	font-size: 200%
 }
 
 section {
-	width: 60%;
-	margin-top: 100px;
-	background-color: darkgrey;
+	width: 50vw;
+	height: auto
 	padding: 0px;
-	display: flex;
-	/* how to make it flex wrap? */
-	/* how to add padding between blocks? */
+	display: block;
 }
-
-
 
 
 
@@ -38,34 +87,34 @@ a {
 
 h1 {
 	font-size: 48px;
-	color: yellow;
-}
-
-h2 {
-	font-size: 16px;
-	color: blue;
-}
-
-h3 {
-
+	font-weight: bold;
+	color: white;
+	margin-bottom: 0px;
 }
 
 
 p{
-	font-size: 8px;
-	color: black;
-	opacity: 20%;
+	font-size: 20px;
+	color: white;
 }
 
 figure {
-	padding: 20px;
+	padding: 0px;
+	weight: 100%;
+	height: auto;
+}
+
+image-block {
+	padding: 10px;
+	weight: 400px;
+	height: auto;
+	width: auto;
 }
 
 
-
 .title {
-	margin-bottom: 10px;
-	color: green;
-	font-size: 24px;
-	font-weight: bold;
+	color: white;
+	font-size: 16px;
+	font-weight: normal;
+
 }

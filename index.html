@@ -12,30 +12,13 @@
 
 		<!-- Replace this URL with your channel to connect the API! -->
 		<header>
-			<a href="https://www.are.na/yining-zhu-_5ltvwbtgr8/1-image" id="channel-url">
+			<a href="https://www.are.na/dong-xia/project-ii-archive" id="channel-url">
 				<h1 id="channel-title">hellooo</h1> <!-- The channel title will be inserted inside this h1. -->
 			</a>
 			<div id="channel-description"></div> <!-- Same here for the channel description. -->
 		</header>
 
-
-
-
-
-		<h1>
-		 <ul>
-		      <div id="menu-outer">
-		        <div class="table">
-		          <ul id="horizontal-list">
-		         <li><a  style="color:White;" href="index.html">All</a ></li>
-		             <li><a style="color:pink;" href="image.html">Image</a ></li>
-		             <li><a style="color:lightgreen;" href="green.html">Green</a ></li>
-		        <li><a style="color:lightblue;" href="blue.html">Blue</a ></li>
-		             </ul>
-		        </div>
-		      </div>
-		         </h1>
-
+		<hr class="solid">
 
 
 
@@ -45,7 +28,7 @@
 			<!-- <h2>Blocks</h2> -->
 		</section>
 
-
+		<hr class="solid">
 
 		<!-- These are the templates for the various block types, below. -->
 		<!-- You can move/nest/remove any of the insertion points! -->
@@ -54,17 +37,19 @@
 
  		<!-- Spotify, Soundcloud, etc. -->
 		<template id="audio-embed-block">
-			<figure class="audio-embed"> <!-- You can use the container classes to style a whole type. -->
-				<h3 class="title"></h3> <!-- Block title inserts here. -->
+			<figure class="audio-embed">
+				<details class="rounded-container"> <!-- You can use the container classes to style a whole type. -->
+				<summary> <h3 class="title"></h3> </summary> <!-- Block title inserts here. -->
 				<img class="image"> <!-- Image/cover image source inserts here. -->
 				<div class="embed"></div> <!-- Embed iframe inserts here. -->
 				<a class="link"> <!-- Original URL inserts here. -->
 					<p class="link-title"></p> <!-- Link title inserts here. -->
 				</a>
 				<figcaption class="description"></figcaption> <!-- Block description inserts here. -->
-				<p class="type"></p> <!-- Block type/kind inserts here. -->
 			</figure>
 		</template>
+
+
 
  		<!-- Uploaded audio files. -->
 		<template id="audio-file-block">
@@ -73,31 +58,20 @@
 				<img class="image">
 				<audio class="audio" controls></audio> <!-- Audio source inserts here. -->
 				<figcaption class="description"></figcaption>
-				<p class="type"></p>
 			</figure>
 		</template>
 
-		<template id="image-block">
-			<figure class="image-block">
-				<h3 class="title"></h3>
-				<img class="image">
-				<a class="link">
-					<p class="link-title"></p>
-				</a>
-				<figcaption class="description"></figcaption>
-				<p class="type"></p>
-			</figure>
-		</template>
+
 
 		<template id="link-block">
 			<figure class="link-block">
-				<h3 class="title"></h3>
+				<details class="rounded-container">
+				<summary>	<h3 class="title"></h3></summary>
 				<img class="image">
 				<a class="link">
 					<p class="link-title"></p>
 				</a>
 				<figcaption class="description"></figcaption>
-				<p class="type"></p>
 			</figure>
 		</template>
 
@@ -109,7 +83,6 @@
 					<p class="link-title"></p> <!-- Repeats the block title. -->
 				</a>
 				<figcaption class="description"></figcaption>
-				<p class="type"></p>
 			</figure>
 		</template>
 
@@ -118,34 +91,61 @@
 				<h3 class="title"></h3>
 				<div class="content"></div> <!-- Text blocks insert their HTML here. -->
 				<figcaption class="description"></figcaption>
-				<p class="type"></p>
 			</figure>
 		</template>
+
+		<template id="image-block">
+			<figure class="image-block">
+				<details class="rounded-container">
+				<summary>	<h3 class="title"></h3>  </summary>
+				<img class="image">
+				<a class="link">
+					<p class="link-title"></p>
+				</a>
+				<figcaption class="description"></figcaption>
+				</details>
+			</figure>
+		</template>
+
 
 		<!-- YouTube, Vimeo, etc. -->
 		<template id="video-embed-block">
 			<figure class="video-embed-block">
-				<h3 class="title"></h3>
+				<details class="rounded-container">
+				<summary> <h3 class="title"></h3> </summary>
 				<img class="image">
 				<div class="embed"></div>
 				<a class="link">
 					<p class="link-title"></p>
 				</a>
 				<figcaption class="description"></figcaption>
-				<p class="type"></p>
 			</figure>
 		</template>
 
 		<!-- Uploaded video files. -->
 		<template id="video-file-block">
 			<figure class="video-file-block">
-				<h3 class="title"></h3>
+				<details class="rounded-container">
+				<summary> <h3 class="title"></h3> </summary>
 				<img class="image">
 				<video class="video" controls></video> <!-- Video source inserts here. -->
 				<figcaption class="description"></figcaption>
-				<p class="type"></p>
 			</figure>
 		</template>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

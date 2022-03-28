@@ -146,3 +146,13 @@ window.addEventListener('DOMContentLoaded', () => {
 			parseBlocks(data)
 		})
 });
+
+// // var container = document.getElementsByClassName("image-block");
+// var apple = document.querySelectorAll(".image-block");
+// console.log(apple);
+// for(var w = 0; w < apple.length; w++){
+// 	var x = document.createElement("HR");
+// 	x.classList.add("solid");
+// 	apple[i].appendChild(x);
+// 	console.log("work")
+// }
