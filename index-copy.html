@@ -18,14 +18,17 @@
 			<div id="channel-description"></div> <!-- Same here for the channel description. -->
 		</header>
 
+		<hr class="solid">
+
+
 
 		<!-- All the channel “blocks” will be created as children, here. -->
 		<!-- You could move the classes to different section elements to separate the types! -->
-		<section class="audio-embed-blocks audio-file-blocks image-blocks embed-blocks link-blocks pdf-blocks text-blocks video-embed-blocks video-file-blocks">
+		<section class=" image-blocks embed-blocks link-blocks pdf-blocks text-blocks video-embed-blocks video-file-blocks">
 			<!-- <h2>Blocks</h2> -->
 		</section>
 
-
+		<hr class="solid">
 
 		<!-- These are the templates for the various block types, below. -->
 		<!-- You can move/nest/remove any of the insertion points! -->
@@ -34,17 +37,19 @@
 
  		<!-- Spotify, Soundcloud, etc. -->
 		<template id="audio-embed-block">
-			<figure class="audio-embed"> <!-- You can use the container classes to style a whole type. -->
-				<h3 class="title"></h3> <!-- Block title inserts here. -->
+			<figure class="audio-embed">
+				<details class="rounded-container"> <!-- You can use the container classes to style a whole type. -->
+				<summary> <h3 class="title"></h3> </summary> <!-- Block title inserts here. -->
 				<img class="image"> <!-- Image/cover image source inserts here. -->
 				<div class="embed"></div> <!-- Embed iframe inserts here. -->
 				<a class="link"> <!-- Original URL inserts here. -->
 					<p class="link-title"></p> <!-- Link title inserts here. -->
 				</a>
 				<figcaption class="description"></figcaption> <!-- Block description inserts here. -->
-				<p class="type"></p> <!-- Block type/kind inserts here. -->
 			</figure>
 		</template>
+
+
 
  		<!-- Uploaded audio files. -->
 		<template id="audio-file-block">
@@ -53,31 +58,20 @@
 				<img class="image">
 				<audio class="audio" controls></audio> <!-- Audio source inserts here. -->
 				<figcaption class="description"></figcaption>
-				<p class="type"></p>
 			</figure>
 		</template>
 
-		<template id="image-block">
-			<figure class="image-block">
-				<img class="image">
-				<a class="link">
-					<p class="link-title"></p>
-				</a>
-				<figcaption class="description"></figcaption>
-				<h3 class="title"></h3>
-				<p class="type"></p>
-			</figure>
-		</template>
+
 
 		<template id="link-block">
 			<figure class="link-block">
+				<details class="rounded-container">
+				<summary>	<h3 class="title"></h3></summary>
 				<img class="image">
 				<a class="link">
 					<p class="link-title"></p>
 				</a>
 				<figcaption class="description"></figcaption>
-				<p class="type"></p>
-				<h3 class="title"></h3>
 			</figure>
 		</template>
 
@@ -89,7 +83,6 @@
 					<p class="link-title"></p> <!-- Repeats the block title. -->
 				</a>
 				<figcaption class="description"></figcaption>
-				<p class="type"></p>
 			</figure>
 		</template>
 
@@ -98,34 +91,61 @@
 				<h3 class="title"></h3>
 				<div class="content"></div> <!-- Text blocks insert their HTML here. -->
 				<figcaption class="description"></figcaption>
-				<p class="type"></p>
 			</figure>
 		</template>
+
+		<template id="image-block">
+			<figure class="image-block">
+				<details class="rounded-container">
+				<summary>	<h3 class="title"></h3>  </summary>
+				<img class="image">
+				<a class="link">
+					<p class="link-title"></p>
+				</a>
+				<figcaption class="description"></figcaption>
+				</details>
+			</figure>
+		</template>
+
 
 		<!-- YouTube, Vimeo, etc. -->
 		<template id="video-embed-block">
 			<figure class="video-embed-block">
+				<details class="rounded-container">
+				<summary> <h3 class="title"></h3> </summary>
 				<img class="image">
 				<div class="embed"></div>
 				<a class="link">
 					<p class="link-title"></p>
 				</a>
 				<figcaption class="description"></figcaption>
-				<p class="type"></p>
-				<h3 class="title"></h3>
 			</figure>
 		</template>
 
 		<!-- Uploaded video files. -->
 		<template id="video-file-block">
 			<figure class="video-file-block">
+				<details class="rounded-container">
+				<summary> <h3 class="title"></h3> </summary>
 				<img class="image">
 				<video class="video" controls></video> <!-- Video source inserts here. -->
 				<figcaption class="description"></figcaption>
-				<p class="type"></p>
-				<h3 class="title"></h3>
 			</figure>
 		</template>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
